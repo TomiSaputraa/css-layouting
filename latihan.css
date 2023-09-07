@@ -20,9 +20,22 @@ body {
 }
 
 .container {
+  /* relative agar menjadi parent absoult dan 1 dimensi */
+  position: relative;
   width: 800px;
-  margin: 20px auto;
+  margin: 80px auto;
   background-color: aliceblue;
+}
+
+/* ####### Top bar ##### */
+.topbar {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 3px solid blueviolet;
+  background-color: salmon;
 }
 
 /* Navbar */
@@ -51,6 +64,19 @@ ul li a:hover {
   background-color: aquamarine;
 }
 
+/* twitter banner */
+
+.twitter {
+  height: 200px;
+  width: 200px;
+  background-image: url(img/Twitter\ Ribbon-512x512.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -22px;
+  right: -26px;
+}
+
 /* Hero image */
 .hero .image {
   width: 100%;
@@ -59,13 +85,14 @@ ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -30px;
+  border-bottom: 5px solid lightblue;
+  border-top: 5px solid salmon;
 }
 
 /* author */
 .judul {
   padding: 10px;
   width: 50%;
-  /* background-color: blue; */
   margin: 10px 0px;
 }
 
@@ -83,18 +110,18 @@ ul li a:hover {
   box-sizing: border-box;
   width: 100%;
   text-decoration: none;
-  /* background-color: rebeccapurple; */
 }
 
 /* content */
 .main .content {
   padding: 10px 10px;
   width: 70%;
-  /* background-color: brown; */
   float: left;
 }
 
 .main .content p {
+  text-indent: 20px;
+  text-align: justify;
   margin-top: 10px;
   margin-right: 20px;
 }
@@ -119,6 +146,7 @@ ul li a:hover {
 }
 
 .profile p {
+  text-align: justify;
   padding: 5px;
 }
 
